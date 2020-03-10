@@ -42,7 +42,7 @@
     "versionPublish": "4.12.2",
     "screenshot": "screenshot.png",
     "imageResize": true,
-    "favicon": "@PROJECT_PATH@/assets/images/boton-on-64x64.png",
+    "favicon": "@PROJECT_PATH@/assets/images/logo2-128x128-1.png",
     "robotsSwitcher": false,
     "robotsText": "User-agent: *\r\nDisallow: /cgi-bin\r\n",
     "sitemapSwitcher": false,
