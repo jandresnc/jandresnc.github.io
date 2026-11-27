@@ -12,63 +12,111 @@
     
     <!-- Bootstrap 4 CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- Google Fonts: Rubik -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap">
+    <!-- Google Fonts: Poppins -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap">
     
     <style>
         body {
-            font-family: 'Rubik', sans-serif;
-            color: #555555;
+            font-family: 'Poppins', sans-serif;
+            color: #ffffff;
+            background-color: #282828;
+            padding-top: 56px;
+        }
+        .navbar {
+            background-color: #1b1b1b !important;
         }
         .navbar-brand {
             font-size: 1.5rem;
+            font-weight: 900;
+            color: #ffc000 !important;
+        }
+        .navbar-dark .navbar-nav .nav-link {
+            color: #ffffff !important;
             font-weight: 500;
         }
-        .header-section {
-            background: linear-gradient(rgba(20, 157, 204, 0.7), rgba(20, 157, 204, 0.7)), url('assets/images/background4.jpg');
-            background-size: cover;
-            background-position: center;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            color: white;
+        .navbar-dark .navbar-nav .nav-link:hover {
+            color: #ffc000 !important;
         }
-        .line {
-            background-color: #149dcc;
-            height: 2px;
-            border: none;
-            margin: 0 auto;
+        .section-header-bar {
+            background: #ffc000;
+            color: #1b1b1b;
+            font-weight: 900;
+            padding: 0.5rem 1rem;
+            margin-bottom: 3rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: inline-block;
         }
-        .features-section {
-            background-color: #eaf1f4 !important;
-            border-top: 1px solid #d0e1e8;
-            border-bottom: 1px solid #d0e1e8;
+        .content-section {
+            padding: 5rem 0;
+            border-bottom: 2px solid #1b1b1b;
         }
-        .features-section .card-img span {
-            font-size: 96px;
-            color: #149dcc;
-        }
-        .contacts-section {
-            background-color: #b2ccd2;
+        h2.section-title {
             color: #ffffff;
-            padding: 6rem 0;
+            font-weight: 900;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
         }
-        .contacts-section h2, .contacts-section h5 {
+        .feature-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        .feature-list li {
+            color: #ffc000;
+            margin-bottom: 0.75rem;
+            font-weight: 500;
+        }
+        .feature-list ul {
+            list-style: none;
+            padding-left: 1.5rem;
+            margin-top: 0.5rem;
+        }
+        .feature-list ul li {
+            color: #b0b8c4;
+            font-weight: 300;
+            font-size: 0.95rem;
+        }
+        .img-fluid-custom {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            border: 2px solid #00ff24; /* Marco verde característico de visión artificial */
+        }
+        .form-control {
+            background-color: #1b1b1b;
+            border: 1px solid #ffc000;
             color: #ffffff;
+            border-radius: 0;
+            padding: 0.75rem 1rem;
+        }
+        .form-control:focus {
+            background-color: #1b1b1b;
+            border-color: #ffc000;
+            color: #ffffff;
+            box-shadow: none;
+        }
+        .form-control::placeholder {
+            color: #4d596c;
+        }
+        .btn-enviar {
+            background-color: #ffc000;
+            color: #1b1b1b;
+            font-weight: 900;
+            border-radius: 0;
+            width: 100%;
+            padding: 0.75rem;
+            text-transform: uppercase;
+        }
+        .btn-enviar:hover {
+            background-color: #e5ac00;
+            color: #1b1b1b;
         }
         .footer-section {
-            background-color: #2e2e2e;
-            color: white;
+            background-color: #1b1b1b;
+            color: #4d596c;
             padding: 2rem 0;
             text-align: center;
-        }
-        .btn-secondary {
-            background-color: #ff3366;
-            border-color: #ff3366;
-        }
-        .btn-secondary:hover, .btn-secondary:focus {
-            background-color: #e62e5c;
-            border-color: #dc2b57;
+            border-top: 1px solid #282828;
         }
     </style>
 </head>
@@ -76,105 +124,173 @@
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #b2ccd2;">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand text-white" href="#top">Ciberfísica</a>
+            <a class="navbar-brand" href="#seccion-1">Ciberfísica</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#content9-h">Nosotros</a>
+                        <a class="nav-link" href="#electronica-industrial">Electrónica Industrial</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#features1-b">Servicios</a>
+                        <a class="nav-link" href="#vision-artificial">Visión Artificial</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#contacts2-i">Contacto</a>
+                        <a class="nav-link" href="#ia-aplicada">IA Aplicada</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Header Section -->
-    <header class="header-section text-center" id="top">
+    <!-- Section 1: Hero / Inicio -->
+    <section class="content-section text-center py-5" id="seccion-1" style="background: radial-gradient(circle, #1b1b1b 0%, #282828 100%); min-height: 80vh; display: flex; align-items: center;">
         <div class="container">
+            <h1 class="display-3 font-weight-bold text-success mb-3" style="color: #00ff24 !important;">CIBERFISICA</h1>
+            <p class="h4 text-warning mb-5">SOLUCIONES PARA LA INDUSTRIA</p>
             <div class="row justify-content-center">
-                <div class="col-md-10">
-                    <h1 class="display-1 font-weight-bold pb-3">Bienvenido a Ciberfísica</h1>
-                    <h3 class="display-4 font-weight-light pb-3">...y a la cuarta revolución industrial</h3>
-                    <div class="pt-3">
-                        <a class="btn btn-secondary btn-lg" href="#content9-h">CONOZCA MÁS</a>
-                    </div>
+                <div class="col-md-4 mb-3">
+                    <a href="#electronica-industrial" class="btn btn-outline-warning btn-block py-3 font-weight-bold">Electrónica Industrial</a>
                 </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- Content Section -->
-    <section class="py-5 bg-white" id="content9-h">
-        <div class="container">
-            <div class="mx-auto" style="width: 100%;">
-                <hr class="line w-25">
-                <div class="text-center py-5 font-weight-normal" style="font-size: 1.25rem;">
-                    La tecnología actual dio origen a conceptos como Internet de las cosas (IoT), Smart Factory, Inteligencia Artificial (AI), Computación en la nube (Cloud Computing) que en conjunto representan la cuarta revolución industrial.<br>Ciberfísica es la compañía que le permite obtener los beneficios de esta nueva era.
+                <div class="col-md-4 mb-3">
+                    <a href="#vision-artificial" class="btn btn-outline-warning btn-block py-3 font-weight-bold">Visión Artificial</a>
                 </div>
-                <hr class="line w-25">
-            </div>
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section class="features-section py-5" id="features1-b">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-md-4 p-3">
-                    <div class="card-img pb-3">
-                        <span>⚙️</span>
-                    </div>
-                    <div class="card-body">
-                        <h4 class="card-title py-3 h4 font-weight-bold">Automatización</h4>
-                        <p class="card-text">Implementamos la automatización de máquinas y procesos para los diversos sectores industriales.</p>
-                    </div>
-                </div>
-                <div class="col-md-4 p-3">
-                    <div class="card-img pb-3">
-                        <span>📶</span>
-                    </div>
-                    <div class="card-body">
-                        <h4 class="card-title py-3 h4 font-weight-bold">IoT</h4>
-                        <p class="card-text">Desarrollamos soluciones basados en el Internet de las cosas.</p>
-                    </div>
-                </div>
-                <div class="col-md-4 p-3">
-                    <div class="card-img pb-3">
-                        <span>💻</span>
-                    </div>
-                    <div class="card-body">
-                        <h4 class="card-title py-3 h4 font-weight-bold">Software</h4>
-                        <p class="card-text">Aplicamos y desarrollamos software como parte integral de nuestra solución.</p>
-                    </div>
+                <div class="col-md-4 mb-3">
+                    <a href="#ia-aplicada" class="btn btn-outline-warning btn-block py-3 font-weight-bold">IA Aplicada</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contacts Section -->
-    <section class="contacts-section" id="contacts2-i">
+    <!-- Section 2: Electrónica Industrial -->
+    <section class="content-section" id="electronica-industrial">
         <div class="container">
+            <div class="section-header-bar">Nuestras Soluciones</div>
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="section-title">ELECTRÓNICA INDUSTRIAL</h2>
+                    <ul class="feature-list">
+                        <li>Desarrollo de sensores y sistemas de medición:
+                            <ul>
+                                <li>- Vibración</li>
+                                <li>- Temperatura</li>
+                                <li>- Aceleración</li>
+                                <li>- Humedad</li>
+                                <li>- CO2</li>
+                                <li>- Gases específicos</li>
+                                <li>- Peso</li>
+                            </ul>
+                        </li>
+                        <li>Desarrollo registradores de datos (dataloggers)</li>
+                        <li>Desarrollo de sistemas IoT basados en LoRaWAN, Bluetooth, Wifi y otros</li>
+                        <li>Desarrollo de sistemas de adquisición de datos en protocolos industriales</li>
+                        <li>Desarrollo de sensores ópticos</li>
+                        <li>Desarrollo de productos para entornos especiales</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <img src="assets/images/Computer vision 2.png" alt="Electrónica Industrial" class="img-fluid img-fluid-custom">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Visión Artificial -->
+    <section class="content-section" id="vision-artificial">
+        <div class="container">
+            <div class="section-header-bar">Nuestras Soluciones</div>
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="section-title">VISIÓN ARTIFICIAL</h2>
+                    <ul class="feature-list">
+                        <li>Monitoreo de máquinas</li>
+                        <li>Preparación de sistemas de visión para caso específico</li>
+                        <li>Monitoreo de líneas de producción</li>
+                        <li>Monitoreo de bodegas</li>
+                        <li>Monitoreo de operadores</li>
+                        <li>Monitoreo de seguridad</li>
+                        <li>Detección temprana de incendios</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <img src="assets/images/Computer vision 3.png" alt="Visión Artificial" class="img-fluid img-fluid-custom mb-3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: IA Aplicada -->
+    <section class="content-section" id="ia-aplicada">
+        <div class="container">
+            <div class="section-header-bar">Nuestras Soluciones</div>
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="section-title">IA APLICADA</h2>
+                    <ul class="feature-list">
+                        <li>Integración de herramientas de inteligencia artificial para procesos específicos:
+                            <ul>
+                                <li>- Manejo de bodegas</li>
+                                <li>- Mantenimiento</li>
+                                <li>- Procesos comerciales</li>
+                                <li>- Atención de usuarios y clientes</li>
+                                <li>- Optimización de supply chain</li>
+                                <li>- Detección de fraudes</li>
+                                <li>- Detección de abandono de clientes</li>
+                                <li>- Detección de incumplimiento de compliance corporativo</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <img src="assets/images/Computer vision 4.png" alt="IA Aplicada" class="img-fluid img-fluid-custom">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Contacto -->
+    <section class="content-section" id="contacto" style="background-color: #222222;">
+        <div class="container">
+            <div class="section-header-bar">Contacto</div>
+            <div class="row mb-4">
+                <div class="col-12">
+                    <h2 class="section-title">CONTACTO</h2>
+                    <p class="text-white-50">Nuestros especialistas analizarán su operación y diseñarán una solución a medida.</p>
+                </div>
+            </div>
             <div class="row">
-                <div class="col-12 mb-4">
-                    <h2 class="display-4">Conversemos</h2>
-                </div>
-                <div class="col-md-6">
-                    <h5 class="m-0">Teléfono:</h5>
-                    <p class="fs-5">+56 9 8213 7351</p>
-                </div>
-                <div class="col-md-6">
-                    <h5 class="m-0">E-mail:</h5>
-                    <p class="fs-5">contacto@ciberfisica.cl</p>
+                <div class="col-lg-8">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6 form-group mb-4">
+                                <input type="text" class="form-control" placeholder="Nombre" required>
+                            </div>
+                            <div class="col-md-6 form-group mb-4">
+                                <input type="text" class="form-control" placeholder="Empresa" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 form-group mb-4">
+                                <input type="email" class="form-control" placeholder="E-Mail" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 form-group mb-4">
+                                <textarea class="form-control" rows="5" placeholder="Mensaje" required></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-enviar">Enviar Mensaje</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
