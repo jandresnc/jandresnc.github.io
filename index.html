@@ -26,9 +26,11 @@
             background-color: #1b1b1b !important;
         }
         .navbar-brand {
-            font-size: 1.5rem;
-            font-weight: 900;
-            color: #ffc000 !important;
+            padding: 0;
+        }
+        .navbar-brand img {
+            height: 60px;
+            width: auto;
         }
         .navbar-dark .navbar-nav .nav-link {
             color: #ffffff !important;
@@ -37,11 +39,15 @@
         .navbar-dark .navbar-nav .nav-link:hover {
             color: #ffc000 !important;
         }
-        .hero-title {
-            font-size: clamp(2.2rem, 8vw, 4.5rem);
-            font-weight: 900;
-            color: #00ff24 !important;
-            word-break: break-word;
+        .hero-logo {
+            max-width: 600px;
+            width: 100%;
+            height: auto;
+        }
+        .hero-subtitle {
+            max-width: 400px;
+            width: 100%;
+            height: auto;
         }
         .section-header-bar {
             background: #ffc000;
@@ -132,7 +138,9 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#seccion-1">Ciberfísica</a>
+            <a class="navbar-brand" href="#seccion-1">
+                <img src="assets/images/Isotipo Ciber.png" alt="Ciberfísica">
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -156,10 +164,14 @@
     </nav>
 
     <!-- Section 1 -->
-    <section class="content-section text-center py-5" id="seccion-1" style="background: radial-gradient(circle, #1b1b1b 0%, #282828 100%); min-height: 80vh; display: flex; align-items: center;">
+    <section class="content-section text-center py-5" id="seccion-1" style="background: url('assets/images/fondo.svg') no-repeat center center; background-size: cover; min-height: 80vh; display: flex; align-items: center;">
         <div class="container">
-            <h1 class="hero-title mb-3">CIBERFISICA</h1>
-            <p class="h4 text-warning mb-5">SOLUCIONES PARA LA INDUSTRIA</p>
+            <div class="mb-3">
+                <img src="assets/images/logotipo.svg" alt="Ciberfísica Logo" class="hero-logo img-fluid">
+            </div>
+            <div class="mb-5">
+                <img src="assets/images/subtitulo.svg" alt="Soluciones para la industria" class="hero-subtitle img-fluid">
+            </div>
             <div class="row justify-content-center">
                 <div class="col-md-4 mb-3">
                     <a href="#electronica-industrial" class="btn btn-outline-warning btn-block py-3 font-weight-bold">Electrónica Industrial</a>
@@ -225,7 +237,7 @@
                     </ul>
                 </div>
                 <div class="col-lg-6">
-                    <img src="assets/images/Computer vision 3.png" alt="Visión Artificial" class="img-fluid img-fluid-custom">
+                    <img src="assets/images/Industria.png" alt="Visión Artificial" class="img-fluid img-fluid-custom">
                 </div>
             </div>
         </div>
@@ -254,7 +266,7 @@
                     </ul>
                 </div>
                 <div class="col-lg-6">
-                    <img src="assets/images/Computer vision 4.png" alt="IA Aplicada" class="img-fluid img-fluid-custom">
+                    <img src="assets/images/Yale.jpg" alt="IA Aplicada" class="img-fluid img-fluid-custom">
                 </div>
             </div>
         </div>
